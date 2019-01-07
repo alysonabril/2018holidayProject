@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="144" width="375" height="585"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="characterCell" textLabel="8aM-r1-D9P" style="IBUITableViewCellStyleDefault" id="fnd-4Z-40U">
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="characterCell" textLabel="8aM-r1-D9P" style="IBUITableViewCellStyleDefault" id="fnd-4Z-40U">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fnd-4Z-40U" id="Gzm-jB-QBi">
@@ -78,7 +78,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pNa-VG-bvh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parchment" translatesAutoresizingMaskIntoConstraints="NO" id="I2x-Qz-9fo">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pNa-VG-bvh">
                                 <rect key="frame" x="90" y="159" width="195" height="189"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pNa-VG-bvh" secondAttribute="height" multiplier="65:63" id="jEJ-1O-SH8"/>
@@ -129,7 +132,9 @@
                             <constraint firstItem="GoI-jM-WtI" firstAttribute="trailing" secondItem="pNa-VG-bvh" secondAttribute="trailing" constant="90" id="2NB-3H-YKM"/>
                             <constraint firstItem="GoI-jM-WtI" firstAttribute="trailing" secondItem="NYM-dY-dqX" secondAttribute="trailing" constant="11" id="3wQ-fc-y24"/>
                             <constraint firstItem="oQi-pz-q4u" firstAttribute="leading" secondItem="GoI-jM-WtI" secondAttribute="leading" constant="11" id="7FX-ZO-OHF"/>
+                            <constraint firstItem="I2x-Qz-9fo" firstAttribute="bottom" secondItem="GoI-jM-WtI" secondAttribute="bottom" id="8Cr-Ip-ObB"/>
                             <constraint firstItem="7mk-nd-YZs" firstAttribute="top" secondItem="NYM-dY-dqX" secondAttribute="bottom" constant="8" id="8mg-0a-hyY"/>
+                            <constraint firstItem="I2x-Qz-9fo" firstAttribute="trailing" secondItem="GoI-jM-WtI" secondAttribute="trailing" id="BnX-wa-2un"/>
                             <constraint firstItem="L8T-mV-Awn" firstAttribute="leading" secondItem="GoI-jM-WtI" secondAttribute="leading" constant="11" id="H8x-re-qmM"/>
                             <constraint firstItem="pNa-VG-bvh" firstAttribute="leading" secondItem="GoI-jM-WtI" secondAttribute="leading" constant="90" id="HgX-aw-AXF"/>
                             <constraint firstItem="4D9-cC-60V" firstAttribute="leading" secondItem="GoI-jM-WtI" secondAttribute="leading" constant="11" id="Hx2-Gi-P2e"/>
@@ -138,7 +143,9 @@
                             <constraint firstItem="GoI-jM-WtI" firstAttribute="trailing" secondItem="oQi-pz-q4u" secondAttribute="trailing" constant="11" id="Oag-UF-cVv"/>
                             <constraint firstItem="oQi-pz-q4u" firstAttribute="top" secondItem="pNa-VG-bvh" secondAttribute="bottom" constant="42" id="WH2-og-Ruf"/>
                             <constraint firstItem="pfC-6e-R8U" firstAttribute="top" secondItem="4D9-cC-60V" secondAttribute="bottom" constant="8" id="bqD-Ds-M00"/>
+                            <constraint firstItem="I2x-Qz-9fo" firstAttribute="top" secondItem="GoI-jM-WtI" secondAttribute="top" id="jae-gB-fsV"/>
                             <constraint firstItem="NYM-dY-dqX" firstAttribute="leading" secondItem="GoI-jM-WtI" secondAttribute="leading" constant="11" id="kac-Bp-Lz4"/>
+                            <constraint firstItem="I2x-Qz-9fo" firstAttribute="leading" secondItem="GoI-jM-WtI" secondAttribute="leading" id="kzo-51-iHB"/>
                             <constraint firstItem="L8T-mV-Awn" firstAttribute="top" secondItem="oQi-pz-q4u" secondAttribute="bottom" constant="8" id="miz-b9-oOf"/>
                             <constraint firstItem="GoI-jM-WtI" firstAttribute="trailing" secondItem="4D9-cC-60V" secondAttribute="trailing" constant="11" id="qU6-Vq-gOh"/>
                             <constraint firstItem="NYM-dY-dqX" firstAttribute="top" secondItem="L8T-mV-Awn" secondAttribute="bottom" constant="8" id="qjm-Iz-egi"/>
@@ -160,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1TP-0B-V2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2552.8000000000002" y="-313.49325337331339"/>
+            <point key="canvasLocation" x="2552.8000000000002" y="-314.03940886699507"/>
         </scene>
         <!--House View Controller-->
         <scene sceneID="3gf-JN-dz9">
@@ -187,9 +194,12 @@
                                                     <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <size key="shadowOffset" width="2" height="1"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <segue destination="xjH-2A-rDb" kind="show" id="pA2-6V-PPi"/>
                                         </connections>
@@ -224,43 +234,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uq9-Vv-eCc">
-                                <rect key="frame" x="95" y="140" width="185" height="185"/>
+                                <rect key="frame" x="95" y="140" width="185" height="246.66666666666663"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Uq9-Vv-eCc" secondAttribute="height" multiplier="1:1" id="0oW-Nm-0Yk"/>
+                                    <constraint firstAttribute="width" secondItem="Uq9-Vv-eCc" secondAttribute="height" multiplier="3:4" id="0oW-Nm-0Yk"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="houseName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsW-hF-7I1">
-                                <rect key="frame" x="11" y="390" width="353" height="32"/>
+                                <rect key="frame" x="11" y="421.66666666666669" width="353" height="32"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mascot:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-qj-qMO">
-                                <rect key="frame" x="11" y="430" width="353" height="31.333333333333314"/>
+                                <rect key="frame" x="11" y="461.66666666666669" width="353" height="31.333333333333314"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colors: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RW-op-dZG">
-                                <rect key="frame" x="11" y="469.33333333333331" width="353" height="31.333333333333314"/>
+                                <rect key="frame" x="11" y="500.99999999999994" width="353" height="31.333333333333314"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Values: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ta-e2-Vfr">
-                                <rect key="frame" x="11" y="508.66666666666669" width="353" height="31.333333333333314"/>
+                                <rect key="frame" x="11" y="540.33333333333337" width="353" height="31.333333333333371"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Founder:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOV-XH-gxG">
-                                <rect key="frame" x="11" y="548" width="353" height="32"/>
+                                <rect key="frame" x="11" y="579.66666666666663" width="353" height="32"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head Of House: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GeF-WN-WPS">
-                                <rect key="frame" x="11" y="588" width="353" height="31.333333333333371"/>
+                                <rect key="frame" x="11" y="619.66666666666663" width="353" height="31.333333333333371"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -273,7 +283,7 @@
                             <constraint firstItem="nOV-XH-gxG" firstAttribute="leading" secondItem="nDv-X5-YWD" secondAttribute="leading" constant="11" id="Mqs-y2-ase"/>
                             <constraint firstItem="nDv-X5-YWD" firstAttribute="trailing" secondItem="4RW-op-dZG" secondAttribute="trailing" constant="11" id="NJ5-93-kko"/>
                             <constraint firstItem="NfG-qj-qMO" firstAttribute="leading" secondItem="nDv-X5-YWD" secondAttribute="leading" constant="11" id="Pc2-re-AMG"/>
-                            <constraint firstItem="rsW-hF-7I1" firstAttribute="top" secondItem="Uq9-Vv-eCc" secondAttribute="bottom" constant="65" id="W47-fL-JdE"/>
+                            <constraint firstItem="rsW-hF-7I1" firstAttribute="top" secondItem="Uq9-Vv-eCc" secondAttribute="bottom" constant="35" id="W47-fL-JdE"/>
                             <constraint firstItem="4ta-e2-Vfr" firstAttribute="top" secondItem="4RW-op-dZG" secondAttribute="bottom" constant="8" id="Yme-7o-SxM"/>
                             <constraint firstItem="rsW-hF-7I1" firstAttribute="leading" secondItem="nDv-X5-YWD" secondAttribute="leading" constant="11" id="ZNM-QV-7hC"/>
                             <constraint firstItem="nDv-X5-YWD" firstAttribute="trailing" secondItem="nOV-XH-gxG" secondAttribute="trailing" constant="11" id="bnY-EQ-QVO"/>
@@ -365,4 +375,7 @@
             <point key="canvasLocation" x="798" y="466"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="parchment" width="247" height="204"/>
+    </resources>
 </document>

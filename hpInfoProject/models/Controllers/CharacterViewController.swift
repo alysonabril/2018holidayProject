@@ -23,6 +23,7 @@ class CharacterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         characterTableView.dataSource = self
+        characterTableView.backgroundView = UIImageView(image: UIImage(named: "parchment")!)
         getHPCharacters()
         
     }
@@ -60,6 +61,7 @@ extension CharacterViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "characterCell", for: indexPath)
         let person = people[indexPath.row]
         cell.textLabel?.text = person.name
+        cell.backgroundColor = UIColor.clear
         return cell
     }
 }

@@ -93,7 +93,7 @@
 			children = (
 				C674435921DEADD40090789C /* Network Services */,
 				C690AF6821DD56F70034DF9E /* models */,
-				C690AF5721DD56B90034DF9E /* Main.storyboard */,
+				C6AC402521E4102E006B97C0 /* Views */,
 				C690AF6521DD56C80034DF9E /* supportingFiles */,
 				C690AF5F21DD56B90034DF9E /* Info.plist */,
 			);
@@ -118,6 +118,14 @@
 				C674435C21DEB3690090789C /* Controllers */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		C6AC402521E4102E006B97C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C690AF5721DD56B90034DF9E /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -24,6 +24,11 @@ class CharacterDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateCharacterInfo()
+        
+
+    
+        
+        //view = UIImageView(image: UIImage(named: "parchment")!)
     }
     
     func updateCharacterInfo () {
