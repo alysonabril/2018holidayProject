@@ -6,7 +6,7 @@
 //  Copyright © 2019 Pursuit. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct House: Codable {
     let name: String
@@ -16,4 +16,8 @@ struct House: Codable {
     let founder: String
     let values: [String]
     let colors: [String]
+    
+    
 }
+
+

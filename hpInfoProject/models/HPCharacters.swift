@@ -10,8 +10,8 @@ import Foundation
 
 struct HPCharacter: Codable {
     let name: String
-    let house: String
-    let school: String
+    let house: String?
+    let school: String?
     let dumbledoresArmy: Bool
     let deathEater: Bool
     let bloodStatus: String

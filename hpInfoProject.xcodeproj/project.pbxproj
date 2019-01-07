@@ -9,28 +9,34 @@
 /* Begin PBXBuildFile section */
 		C674435821DEADBD0090789C /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C674435721DEADBD0090789C /* NetworkHelper.swift */; };
 		C674435B21DEADF30090789C /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C674435A21DEADF30090789C /* AppError.swift */; };
+		C674436021DEC9C20090789C /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C674435F21DEC9C20090789C /* HouseViewController.swift */; };
+		C674436221DEC9F60090789C /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C674436121DEC9F60090789C /* HouseDetailViewController.swift */; };
+		C674436421DECA040090789C /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C674436321DECA040090789C /* CharacterDetailViewController.swift */; };
 		C690AF5421DD56B90034DF9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C690AF5321DD56B90034DF9E /* AppDelegate.swift */; };
-		C690AF5621DD56B90034DF9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C690AF5521DD56B90034DF9E /* ViewController.swift */; };
+		C690AF5621DD56B90034DF9E /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C690AF5521DD56B90034DF9E /* CharacterViewController.swift */; };
 		C690AF5921DD56B90034DF9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C690AF5721DD56B90034DF9E /* Main.storyboard */; };
 		C690AF5B21DD56B90034DF9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C690AF5A21DD56B90034DF9E /* Assets.xcassets */; };
 		C690AF5E21DD56B90034DF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C690AF5C21DD56B90034DF9E /* LaunchScreen.storyboard */; };
 		C690AF6A21DD58900034DF9E /* Houses.swift in Sources */ = {isa = PBXBuildFile; fileRef = C690AF6921DD58900034DF9E /* Houses.swift */; };
-		C690AF6C21DD58B20034DF9E /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C690AF6B21DD58B20034DF9E /* Characters.swift */; };
+		C690AF6C21DD58B20034DF9E /* HPCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C690AF6B21DD58B20034DF9E /* HPCharacters.swift */; };
 		C690AF6E21DD6E3A0034DF9E /* hpAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C690AF6D21DD6E3A0034DF9E /* hpAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C674435721DEADBD0090789C /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		C674435A21DEADF30090789C /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		C674435F21DEC9C20090789C /* HouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
+		C674436121DEC9F60090789C /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
+		C674436321DECA040090789C /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 		C690AF5021DD56B90034DF9E /* hpInfoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hpInfoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C690AF5321DD56B90034DF9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C690AF5521DD56B90034DF9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C690AF5521DD56B90034DF9E /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		C690AF5821DD56B90034DF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C690AF5A21DD56B90034DF9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C690AF5D21DD56B90034DF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C690AF5F21DD56B90034DF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C690AF6921DD58900034DF9E /* Houses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Houses.swift; sourceTree = "<group>"; };
-		C690AF6B21DD58B20034DF9E /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		C690AF6B21DD58B20034DF9E /* HPCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPCharacters.swift; sourceTree = "<group>"; };
 		C690AF6D21DD6E3A0034DF9E /* hpAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hpAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +64,10 @@
 		C674435C21DEB3690090789C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C690AF5521DD56B90034DF9E /* ViewController.swift */,
+				C690AF5521DD56B90034DF9E /* CharacterViewController.swift */,
+				C674436321DECA040090789C /* CharacterDetailViewController.swift */,
+				C674435F21DEC9C20090789C /* HouseViewController.swift */,
+				C674436121DEC9F60090789C /* HouseDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -104,7 +113,7 @@
 		C690AF6821DD56F70034DF9E /* models */ = {
 			isa = PBXGroup;
 			children = (
-				C690AF6B21DD58B20034DF9E /* Characters.swift */,
+				C690AF6B21DD58B20034DF9E /* HPCharacters.swift */,
 				C690AF6921DD58900034DF9E /* Houses.swift */,
 				C674435C21DEB3690090789C /* Controllers */,
 			);
@@ -184,11 +193,14 @@
 			files = (
 				C674435821DEADBD0090789C /* NetworkHelper.swift in Sources */,
 				C690AF6E21DD6E3A0034DF9E /* hpAPIClient.swift in Sources */,
-				C690AF5621DD56B90034DF9E /* ViewController.swift in Sources */,
+				C690AF5621DD56B90034DF9E /* CharacterViewController.swift in Sources */,
 				C690AF6A21DD58900034DF9E /* Houses.swift in Sources */,
 				C690AF5421DD56B90034DF9E /* AppDelegate.swift in Sources */,
-				C690AF6C21DD58B20034DF9E /* Characters.swift in Sources */,
+				C674436421DECA040090789C /* CharacterDetailViewController.swift in Sources */,
+				C690AF6C21DD58B20034DF9E /* HPCharacters.swift in Sources */,
 				C674435B21DEADF30090789C /* AppError.swift in Sources */,
+				C674436221DEC9F60090789C /* HouseDetailViewController.swift in Sources */,
+				C674436021DEC9C20090789C /* HouseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
