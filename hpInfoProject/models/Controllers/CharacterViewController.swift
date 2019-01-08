@@ -9,10 +9,10 @@
 import UIKit
 
 class CharacterViewController: UIViewController {
-    
+    @IBOutlet weak var characterSearch: UISearchBar!
     @IBOutlet weak var characterTableView: UITableView!
     
-    var people = [HPCharacter](){
+    private var people = [HPCharacter]() {
         didSet{
             DispatchQueue.main.async{
                 self.characterTableView.reloadData()
@@ -25,6 +25,7 @@ class CharacterViewController: UIViewController {
         characterTableView.dataSource = self
         characterTableView.backgroundView = UIImageView(image: UIImage(named: "parchment")!)
         getHPCharacters()
+        characterSearch.delegate = self
         
     }
     
@@ -38,14 +39,13 @@ class CharacterViewController: UIViewController {
     }
     
     
-    @objc private func getHPCharacters() {
+     func getHPCharacters() {
         HPAPIClient.searchHPCharacter(keyword: "") { (error, person) in
-            if let error = error{
+            if let error = error {
                 print(error)
             }
-            else if let person = person{
+            else if let person = person {
                 self.people = person
-                
             }
         }
     }
@@ -63,5 +63,15 @@ extension CharacterViewController: UITableViewDataSource {
         cell.textLabel?.text = person.name
         cell.backgroundColor = UIColor.clear
         return cell
+    }
+}
+
+extension CharacterViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        guard let searchText = searchBar.text,
+            !searchText.isEmpty,
+            let searchTextEncoded = searchText.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else { return getHPCharacters() }
+        people = people.filter{$0.name.contains(searchTextEncoded.capitalized)}
     }
 }

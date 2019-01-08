@@ -63,6 +63,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hHC-w3-mPq"/>
                     <connections>
+                        <outlet property="characterSearch" destination="gWu-Vo-VnJ" id="OCf-li-tMi"/>
                         <outlet property="characterTableView" destination="yPi-lU-xDZ" id="yuE-rS-CLv"/>
                     </connections>
                 </viewController>
@@ -94,7 +95,7 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8T-mV-Awn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8T-mV-Awn">
                                 <rect key="frame" x="11" y="430" width="353" height="25"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -376,6 +377,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="parchment" width="247" height="204"/>
+        <image name="parchment" width="736" height="1121"/>
     </resources>
 </document>
